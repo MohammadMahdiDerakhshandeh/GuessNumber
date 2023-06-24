@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Guess the number</h1>
+    </div>
+    <div id="startDiv">
+      <p id="firstParagraph">Enter the upper limit of your number:</p>
+      <input type="text" id="upperLimit" autocomplete="off"/><button id="startBtn">start</button>
+    </div>
+    <div id="secondDiv" class="hidden">
+        <p>You have <span id="numChance" class="red">0</span> chances to guess</p>
+        <input type="text" autocomplete="off" id="numGuess"><button id="takeGuessBtn">take a guess</button>
+        <p id="statusNumber">Your guesses:</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
